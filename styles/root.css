@@ -1,0 +1,10 @@
+:root{
+    --cor-bg: rgb(244, 241, 241);
+    --cor-primaria: green;
+    --cor-secundaria: red;
+    --cor-destaque: blue;
+    --fonte-padrao: "Arial";
+    --cor-concluido: rgb(168, 255, 168);
+    --cor-alerta-vazio: rgb(255, 179, 179);
+    --cor-alerta-adicao: rgb(255, 255, 184);
+}

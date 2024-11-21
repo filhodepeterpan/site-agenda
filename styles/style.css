@@ -1,0 +1,135 @@
+@import url(root.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor-bg);
+    font-family: var(--fonte-padrao);
+}
+
+.alerta{
+    position: absolute;
+    top: 0%;
+    padding: 0 0 0.1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 100%;
+    text-align: center;
+}
+
+#alerta-adicao, #alerta-vazio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 1rem;
+}
+
+#fechar-alerta{
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+#fechar-alerta:hover{
+    cursor: pointer;
+}
+
+.conteudo{
+    margin: 0 auto;
+    min-width: 300px;
+    width: 300px;
+    max-width: 300px;
+    min-height: 333px;
+    height: 333px;
+    max-height: 333px;
+    border: 1px solid  black;
+    padding: 2rem;
+    box-shadow: 0px 4px 8px #000000fe;
+    background-color: white;
+}
+
+#titulo{
+    text-align: center;
+    color: var(--cor-destaque);
+}
+
+.conteudo-adicao{
+    margin: 1.2rem 0 1.2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#anotacao{
+    padding: 0.3rem 0.3rem;
+    border: 1px solid black;
+}
+
+#nome-da-anotacao:hover{
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 90%;
+}
+
+#conteudo-botao{
+    padding: 0.5rem;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-weight: bold;
+}
+
+#excluir-anotacao{
+    border: 1px solid black;
+    margin: 0 1rem 0 0;
+    padding: 0.5rem 0.7rem;
+    background-color: var(--cor-secundaria);
+    font-size: 0.6rem;
+    color: white;
+    font-weight: bold;
+    outline: none;
+}
+
+.conteudo-anotacoes{
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.conteudo-anotacoes::-webkit-scrollbar{
+    width: 8px
+}
+
+.conteudo-anotacoes::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.conteudo-anotacoes::-webkit-scrollbar-thumb{
+    background-color: var(--cor-destaque);
+    border-radius: 20px;
+    border: 1px solid var(--cor-destaque);
+}
+
+.conteudo-anotacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#nome-da-anotacao{
+    width: 100%;
+    margin: 0.5rem 0;
+    word-break: break-all;
+}
